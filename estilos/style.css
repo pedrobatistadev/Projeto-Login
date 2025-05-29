@@ -85,7 +85,7 @@ section {
     border: none;
     background-color: #59b6b3;
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     color: white;
     border-radius: 10px;
     margin-bottom: 1vh;
@@ -105,7 +105,7 @@ section {
     text-align: center;
     text-decoration: none;
     color: #3b8684;
-    padding: 9px;
+    padding: 6px;
     border-radius: 10px;
 }
 
