@@ -50,9 +50,6 @@ section {
     font-size: 0.9em;
 }
 
-#login > form {
-}
-
 .campo {
     background-color: var(--lilas);
     border-radius: 10px;
