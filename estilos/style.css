@@ -17,7 +17,6 @@ body {
 }
 
 main {
-    width: 100vw;
     height: 100vh;
     position: relative;
 }
@@ -32,6 +31,11 @@ section {
 
 #imagem {
     background-image: url(../imagens/paisagem.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+    border-radius: 20px 20px 0px 0px;
 }
 
 #login {
@@ -42,19 +46,19 @@ section {
 
 #login > h1 {
     text-align: center;
-    padding: 10px;
 }
 
 #login > p {
     text-align: justify;
     font-size: 0.9em;
+    margin-bottom: 2vh;
 }
 
 .campo {
     background-color: var(--lilas);
     border-radius: 10px;
     width: 100%;
-    height: 60px;
+    height: 45px;
     margin-bottom: 1vh;
 }
 
@@ -63,12 +67,52 @@ section {
     padding: 5px;
     width: 35px;
     color: white;
-    transform: translate(0%, 20%);
+    transform: translate(0%, 0%);
 }
 
 .campo > input {
     width: calc(100% - 40px);
-    height: 45px;
+    transform: translate(0%, -25%);
+    height: 35px;
     border-radius: 10px;
     background-color: #5dceca;
+}
+
+
+#sub {
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: #59b6b3;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#sub:hover {
+    background-color: #3c7c79;
+}
+
+#forget {
+    background-color: white;
+    border: 1px solid #59b6b3;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #3b8684;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+#forget:hover {
+    background-color: #73ddda;
+}
+
+#invite {
+    font-size: 1em;
 }
