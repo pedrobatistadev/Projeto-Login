@@ -1,1 +1,130 @@
 @charset "UTF-8";
+
+
+:root {
+    --cor1: #4A9D9D;
+    --cor2: #5E2F82;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor2);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    background-color: white;
+    width: 80vw;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+div#imagem {
+    background-image: url(../imagens/paisagem.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+div#login {
+    height: 320px;
+    padding: 10px;
+}
+
+div#login > h1 {
+    text-align: center;
+}
+
+div#login > p {
+    padding: 10px 0px 5px 0px;
+    font-size: 0.8em;
+}
+
+div.campo {
+    background-color: var(--cor2);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+}
+
+div.campo > span {
+    width: 38px;
+    padding: 3px;
+    font-size: 2em;
+    color: white;
+}
+
+div.campo > input {
+    padding: 2px;
+    background-color: #62cece;
+    width: calc(100% - 43px);
+    height: 40px;
+    border-radius: 12px;
+    font-size: 1em;
+    transform: translateY(-9px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+input[type=submit] {
+    background-color: #53AAA7;
+    color: white;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2D6462;
+}
+
+div.submeter > a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #53AAA7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #336664;
+}
+
+div.submeter > a:hover {
+    background-color: #64c9c5;
+}
+
+div.submeter > a > span {
+    font-size: 1em;
+}

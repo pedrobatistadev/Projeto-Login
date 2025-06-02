@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <div id="imagem">
+
+            </div>
+            <div id="login">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="cadastro.php" method="post" autocomplete="off">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="" placeholder=" seu e-mail" required>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="" placeholder=" sua senha" required>
+                    </div>
+                    <div class="submeter">
+                        <input type="submit" value="Entrar">
+                        <a href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
