@@ -49,6 +49,7 @@
 
     div#login > p {
         font-size: 1em;
+        margin-top: 10px;
     }
 
     div#login {
